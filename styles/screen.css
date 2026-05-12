@@ -648,7 +648,7 @@ header .space {
   -o-animation: slide 8s linear infinite;
   -ms-animation: slide 8s linear infinite;
   animation: slide 8s linear infinite;
-  background-image: url("/images/stars.svg");
+  background-image: url("../images/stars.svg");
   background-position: center center;
   background-size: 240px;
   height: 400%;
@@ -1327,51 +1327,48 @@ figure.highlight pre {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    min-height: 100vh;
   }
-  header {
+  body header {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -o-box-flex: 1;
     box-flex: 1;
-    -webkit-flex: 0 0 320px;
-    -ms-flex: 0 0 320px;
-    flex: 0 0 320px;
-    max-width: 320px;
+    -webkit-flex: 0 0 280px /* 固定左侧宽度：280px，想窄就改小，想宽改大 */;
+    -ms-flex: 0 0 280px /* 固定左侧宽度：280px，想窄就改小，想宽改大 */;
+    flex: 0 0 280px /* 固定左侧宽度：280px，想窄就改小，想宽改大 */;
+    max-width: 280px;
     overflow: hidden;
     text-align: right;
-    padding: 40px;
+    padding: 30px /* 内边距，让文字不贴边 */;
     margin-left: 0;
-    min-height: 100vh;
   }
-  header img {
+  body header img {
     margin: 0 -32px 0 0;
   }
-  header nav ul {
+  body header nav ul {
     padding-top: 24px;
   }
-  header nav ul li {
+  body header nav ul li {
     display: block;
     line-height: 1.6em;
     padding: 0;
   }
-  header nav ul li:after {
+  body header nav ul li:after {
     content: '';
     padding: 0;
   }
-  main {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -o-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+  body main {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -o-box-flex: 2;
+    box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
     padding: 40px;
-    min-height: 100vh;
   }
-  main form .form-column input[type="name"],
-  main form .form-column input[type="email"] {
+  body main form .form-column input[type="name"],
+  body main form .form-column input[type="email"] {
     width: 35%;
     margin: 0.5em 0.5em 0.5em 0;
   }
